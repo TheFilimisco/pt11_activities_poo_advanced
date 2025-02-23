@@ -7,8 +7,8 @@ public class Vehicle {
         this.licensePlate = licensePlate;
     }
 
-    public double getPrice(){
-        return 10;
+    public double getPrice(int day){
+        return 10*day;
     }
 
     public String getLicensePlate() {

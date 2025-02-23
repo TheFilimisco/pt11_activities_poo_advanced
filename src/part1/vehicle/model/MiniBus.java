@@ -1,18 +1,16 @@
 package part1.vehicle.model;
 
-public class Car extends Vehicle{
+public class MiniBus extends Vehicle {
     private int carSeat;
-
-    public Car(String licensePlate, int carSeat) {
+    public MiniBus(String licensePlate, int carSeat) {
         super(licensePlate);
         this.carSeat = carSeat;
     }
 
     @Override
     public double getPrice(int day){
-        return super.getPrice(day) * 1.5 + (carSeat*1.5);
+        return super.getPrice(day)+(carSeat*2);
     }
-
 
     public int getCarSeat() {
         return carSeat;
@@ -22,10 +20,4 @@ public class Car extends Vehicle{
         this.carSeat = carSeat;
     }
 
-    @Override
-    public String toString() {
-        return "Car{" +
-                "carSeat=" + carSeat +
-                "} " + super.toString();
-    }
 }

@@ -23,13 +23,15 @@ public class ManagerVehicle {
     }
 
     public Vehicle getVehicle(String licensePlate){
-        return (Vehicle) vehicles.stream().filter(vehicle -> vehicle.getLicensePlate().equals(licensePlate));
+        return vehicles.stream()
+                .filter(vehicle -> vehicle.getLicensePlate().equals(licensePlate))
+                .findFirst()
+                .orElse(null);
     }
 
-    public static void main(String[] args) {
-        ManagerVehicle managerVehicle = new ManagerVehicle();
-        managerVehicle.addVehicle(new Vehicle("XXX"));
-        System.out.println(managerVehicle.getVehicle("XXX"));
-
+    public void showAllVehicle(){
+        vehicles.forEach(System.out::println);
     }
+
+
 }
