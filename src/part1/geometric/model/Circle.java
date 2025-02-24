@@ -20,6 +20,6 @@ public class Circle extends ObjectGeometric{
     public String toString() {
         return "Circle{" +
                 "radius=" + radius +
-                '}';
+                "} " + super.toString();
     }
 }

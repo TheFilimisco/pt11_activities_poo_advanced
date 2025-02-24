@@ -21,6 +21,7 @@ public class Square extends ObjectGeometric{
     public String toString() {
         return "Square{" +
                 "side=" + side +
-                '}';
+                ", TOTAL_SIDE=" + TOTAL_SIDE +
+                "} " + super.toString();
     }
 }

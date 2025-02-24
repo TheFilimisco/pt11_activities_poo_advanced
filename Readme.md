@@ -56,5 +56,42 @@ trobar en la gestió d’una biblioteca.
 
 ![Library](src/img/library.png)
 
-## 6. Empleats
+## 6. Empleats (_[employees](src/part1/employees)_)
+
+- Tenim un sistema on controlem els treballadors que hi ha a la nostra empresa. 
+- De l'Empleat guardarem el nom, el cognom, l'edat i el salari. 
+- A més de la constructora per defecte i la constructora per paràmetres i dels seus setters&getters, un empleat també tindrà:
+  - boolean plus(int plusSalarial). Aquest mètode ha de ser capaç de sumar una quantitat que
+    entrarem com a paràmetre si l'empleat té més de 40 anys. Retorna una variable booleana
+    per tal d'informar si s'ha apujat el seu salari o no.
+  - boolean comprovaNom(): ens comprova que el nom no estigui buit
+  - Després tindrem un tipus d'empleat que és un Comercial, d'un comercial guardarem la
+    comissio que s'endú. Crea igualment constructores i gettersSetters.
+  - A més tenim un empleat que serà el Repartidor. Aquest empleat en guardarem la zona per
+    la qual reparteix el producte. Crea igualment constructores i gettersSetters.
+  - Fes una classe executora, comprova la creació de diferents tipus d'objectes diferents
+    empleat, comercial i repartidor. Compara classes, utilitza el getClass, instanceOf, prova la
+    igualtat entre dos Objectes (equalsTo).
+
+# Activitats Classes Abstractes ([Part2](src/part2))
+
+## 1.Transports (_[transports](src/part2/transports)_)
+- Volem modelar diversos tipus de transports: cotxes, bicicletes i metro.
+- La informació rellevant relativa a tot els **transports** és:
+  - 1. L'identificador
+  - 2. La velocitat actual en km/h (podem suposar que és constant).
+- La informació rellevant relativa als **cotxes** és:
+  - 1. El tipus de combustible.
+  - 2. El preu per litre de combustible.
+  - 3. Els litres de combustible que gasta un cotxe per cada km recorregut.
+- La informació rellevant relativa a les **bicicletes** és:
+  - 1. El nombre de marxes.
+- La informació rellevant relativa als **metros** és:
+  - 1. El preu del bitllet. Cada 5km el preu del bitllet augmenta un 1 euro.
+- A partir de les dades anteriors, volem efectuar les operacions següents:
+  - Calcular el temps en hores que triga cada vehicle en recórrer una distància en
+  quilòmetres, a velocitat constant.
+  -  Calcular el preu que hem de pagar com a usuaris de cada vehicle en recórrer una
+     distància, el programa ha de demanar la distància recorreguda. Estableix el preu que
+     necessitis en cada cas.
 
