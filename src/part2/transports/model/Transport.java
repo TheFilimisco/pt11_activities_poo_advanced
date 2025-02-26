@@ -20,6 +20,8 @@ public abstract class  Transport {
         return CURRENT_SPEED;
     }
 
+    protected abstract double getTimeByHour();
+    protected abstract double getPriceByDistanceTraveled(int distanceTraveled);
 
     @Override
     public boolean equals(Object o) {

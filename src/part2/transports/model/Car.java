@@ -37,16 +37,21 @@ public class Car extends Transport{
     }
 
     @Override
+    protected double getTimeByHour() {
+        return 0;
+    }
+
+    @Override
+    protected double getPriceByDistanceTraveled(int distanceTraveled) {
+        return 0;
+    }
+
+    @Override
     public String toString() {
         return "Car{" +
                 "typeOfFuel=" + typeOfFuel +
                 ", priceByFuel=" + priceByFuel +
                 ", SPELL_FUEL_BY_KM=" + SPELL_FUEL_BY_KM +
                 "} " + super.toString();
-    }
-
-    public static void main(String[] args) {
-        Car car = new Car((short)20, TypeOfFuel.GASOLINE, 20, 1.5);
-        System.out.println(car);
     }
 }
