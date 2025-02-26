@@ -16,6 +16,12 @@ public class Bicycle extends Transport {
         this.gears = gears;
     }
 
+
+    @Override
+    public double getPriceByDistanceTraveled(int distanceTraveled) {
+        return 0;
+    }
+
     @Override
     public String toString() {
         return "Bicycle{" +

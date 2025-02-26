@@ -16,11 +16,15 @@ public abstract class  Transport {
     protected void setLicensePlate(String licensePlate) {
         this.licensePlate = licensePlate;
     }
-    protected short getNORMAL_VELOCITY() {
+
+    protected short getCURRENT_SPEED() {
         return CURRENT_SPEED;
     }
 
-    protected abstract double getTimeByHour();
+    public double getHourTimeByDistanceTraveled(int distanceTraveled){
+        return (double) distanceTraveled /CURRENT_SPEED;
+    }
+
     protected abstract double getPriceByDistanceTraveled(int distanceTraveled);
 
     @Override

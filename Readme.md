@@ -95,3 +95,5 @@ trobar en la gestió d’una biblioteca.
      distància, el programa ha de demanar la distància recorreguda. Estableix el preu que
      necessitis en cada cas.
 
+## 2.Aquarium (_[Aquarium](src/part2/Aquarium)_)
+
