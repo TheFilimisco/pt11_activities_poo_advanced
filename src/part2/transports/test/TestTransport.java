@@ -14,7 +14,6 @@ public class TestTransport {
         System.out.println(car.getPriceByDistanceTraveled(200));
         System.out.println(car.getPriceByDistanceTraveled(100));
 
-
         // Bicycle
         Bicycle bicycle = new Bicycle((short)20, 3);
         System.out.println(bicycle.getHourTimeByDistanceTraveled(100));
@@ -24,7 +23,6 @@ public class TestTransport {
         Subway subway = new Subway((short) 120, 2.55);
         System.out.println(subway.getHourTimeByDistanceTraveled(100));
         System.out.println(subway.getPriceByDistanceTraveled(100));
-
 
 
 
