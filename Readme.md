@@ -1,6 +1,6 @@
 # Activitats Herència ([Part1](src/part1))
 
-## 1.Objecte Geomètric (_[geometric](src/part1/geometric)_)
+## 1.Objecte Geomètric (_[Geometric](src/part1/geometric)_)
 - Crea la classe ObjecteGeometric que té:
   - atributs: coord_x, coord_y, color
   - mètodes: constructor, toString()
@@ -11,7 +11,7 @@
   - atributs: costat
   - mètodes: constructor, toString(), perimetre() i area()
 
-## 2.Vehicles (_[vehicle](src/part1/vehicle)_)
+## 2.Vehicles (_[Vehicle](src/part1/vehicle)_)
 - Cada vehicle s’identifica per la seva **matrícula**.
 - El preu del lloguer de qualsevol vehicle té una component base que depèn dels dies de
   lloguer a raó de 10€ **per dia**.
@@ -25,7 +25,7 @@
 - Afegir un vehicle.
 - Obtenir el preu del vehicle.
 
-## 3.School (_[school](src/part1/school)_)
+## 3.School (_[School](src/part1/school)_)
 + Defineix les classes corresponents al següent diagrama UML.
 + Afegeix constructors a cada classe de manera que el constructor cridi al constructor de la
 classe mare i seguidament escrigui per pantalla “Sóc el constructor de la classe xxx”.
@@ -34,7 +34,7 @@ de cada classe i observa què es mostra per pantalla en cada creació.
 
 ![School](src/img/school.png)
 
-## 4-5. Biblioteca IImplementació herència (_[library](src/part1/library)_)
+## 4-5. Biblioteca IImplementació herència (_[Library](src/part1/library)_)
 - L’objectiu d’aquesta activitat és implementar un seguit de classes en Java relacionades
 mitjançant herència. 
 - Implementeu les classes Fitxa, Obra, Volum i Revista corresponents
@@ -56,7 +56,7 @@ trobar en la gestió d’una biblioteca.
 
 ![Library](src/img/library.png)
 
-## 6. Empleats (_[employees](src/part1/employees)_)
+## 6. Empleats (_[Employees](src/part1/employees)_)
 
 - Tenim un sistema on controlem els treballadors que hi ha a la nostra empresa. 
 - De l'Empleat guardarem el nom, el cognom, l'edat i el salari. 
@@ -75,7 +75,7 @@ trobar en la gestió d’una biblioteca.
 
 # Activitats Classes Abstractes ([Part2](src/part2))
 
-## 1.Transports (_[transports](src/part2/transports)_)
+## 1.Transports (_[Transports](src/part2/transports)_)
 - Volem modelar diversos tipus de transports: cotxes, bicicletes i metro.
 - La informació rellevant relativa a tot els **transports** és:
   - 1. L'identificador
@@ -96,4 +96,32 @@ trobar en la gestió d’una biblioteca.
      necessitis en cada cas.
 
 ## 2.Aquarium (_[Aquarium](src/part2/aquarium)_)
+
+- Volem modelar els components d'un aquari. En un aquari hi viuen animals i plantes. La
+ informació rellevant relativa a tots els organismes (peixos i plantes) és:
+  1. El nom del peix o de la planta.
+  2. La família a la qual pertany
+  3. El tipus de llum que necessita l'animal o la planta. La llum estarà codificada amb tres
+     lletres en funció de les necessitats de cada organisme: "H" alta, mitjana "M" i baixa "L".
+  4. La temperatura màxima que pot tolerar el peix o planta.
+  5. La temperatura mínima que pot tolerar el peix o planta.
+  6. El PH màxim que pot tolerar el peix o planta.
+  7. El PH mínim que pot tolerar el peix o planta.
+- La informació rellevant relativa a tots els peixos és:
+  - 1. La procedència geogràfica del peix.
+  - 2. La dieta codificada segons aquesta escala ("W" Algues, "O" Omnívor, "L" Fulles).
+  - 3. La longitud en cm del peix.
+- La informació rellevant relativa a totes les plantes és:
+  - 1. El tipus de planta, codificant-lo de la següent manera: "S" Tija, "B" Bulb, "R" Arrels
+- A partir de les dades anteriors, volem efectuar les operacions següents:
+  1. Per a cada organisme, retornar una cadena amb els marges d'acidesa de l'aigua
+     acceptables per l'espècie.Per exemple: 6-7.
+  2. Per a cada organisme, retornar una cadena amb els marges de temperatura
+     acceptables per l'espècie. Per exemple: 10-20.
+  3. Per a cada peix, traduir el codi del tipus de dieta a l'explicació pertinent. Si és 'W',
+     "Algues", etc.
+  4. Per a cada organisme, traduir el codi de tipus de necessitats de llum a l'explicació
+     pertinent. Si és 'H', "Necessitats altes de llum", etc.
+  5. Per a cada planta, traduir el codi de tipus de planta a l'explicació pertinent. Si és 'S',
+     "Tija", etc.
 

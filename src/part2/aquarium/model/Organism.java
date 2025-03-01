@@ -1,57 +1,69 @@
 package part2.aquarium.model;
 
-public class Organism {
+public abstract class Organism {
     private String nameOrganism;
     final private String nameFamily;
     final private LightTypeByNecessity lightTypeByNecessity;
-    final private short minToleratedTemperature;
-    final private short maxToleratedTemperature;
-    final private short minToleratedPH;
-    final private short maxToleratedPH;
+    final private float minToleratedTemperature;
+    final private float maxToleratedTemperature;
+    final private float minToleratedPH;
+    final private float maxToleratedPH;
 
     public enum LightTypeByNecessity{
         High, Medium, Low
     }
 
-    public Organism(String nameOrganism, String nameFamily, LightTypeByNecessity lightTypeByNecessity, short minToleratedTemperature, short maxToleratedTemperature, short minToleratedPH, short maxToleratedPH) {
+    protected Organism(String nameOrganism, String nameFamily, String lightTypeByNecessity, float minToleratedTemperature, float maxToleratedTemperature, float minToleratedPH, float maxToleratedPH) {
+        switch (lightTypeByNecessity.toUpperCase()){
+            case "H":
+                this.lightTypeByNecessity = LightTypeByNecessity.High;
+                break;
+            case "M":
+                this.lightTypeByNecessity = LightTypeByNecessity.Medium;
+                break;
+            case "L":
+                this.lightTypeByNecessity = LightTypeByNecessity.Low;
+                break;
+            default:
+                throw new IllegalArgumentException("Invalid light Type: " + lightTypeByNecessity);
+        }
         this.nameOrganism = nameOrganism;
         this.nameFamily = nameFamily;
-        this.lightTypeByNecessity = lightTypeByNecessity;
         this.minToleratedTemperature = minToleratedTemperature;
         this.maxToleratedTemperature = maxToleratedTemperature;
         this.minToleratedPH = minToleratedPH;
         this.maxToleratedPH = maxToleratedPH;
     }
 
-    public String getNameOrganism() {
+    protected String getNameOrganism() {
         return nameOrganism;
     }
 
-    public void setNameOrganism(String nameOrganism) {
+    protected void setNameOrganism(String nameOrganism) {
         this.nameOrganism = nameOrganism;
     }
 
-    public String getNameFamily() {
+    protected String getNameFamily() {
         return nameFamily;
     }
 
-    public LightTypeByNecessity getLightTypeByNecessity() {
+    protected LightTypeByNecessity getLightTypeByNecessity() {
         return lightTypeByNecessity;
     }
 
-    public short getMinToleratedTemperature() {
+    protected float getMinToleratedTemperature() {
         return minToleratedTemperature;
     }
 
-    public short getMaxToleratedTemperature() {
+    protected float getMaxToleratedTemperature() {
         return maxToleratedTemperature;
     }
 
-    public short getMinToleratedPH() {
+    protected float getMinToleratedPH() {
         return minToleratedPH;
     }
 
-    public short getMaxToleratedPH() {
+    protected float getMaxToleratedPH() {
         return maxToleratedPH;
     }
 
