@@ -125,3 +125,26 @@ trobar en la gestió d’una biblioteca.
   5. Per a cada planta, traduir el codi de tipus de planta a l'explicació pertinent. Si és 'S',
      "Tija", etc.
 
+## 3.Areas (_[Areas](src/part2/areas)_)
+
+Volem modelar els espais físics d'un centre escolar.
+- La informació rellevant relativa a tots els **espais** és:
+   1. El codi identificador.
+   2. La superfície en m².
+   3. Si disposa de llum natural o no.
+   4. El consum elèctric, en Kwh per metre quadrat.
+- La informació rellevant dels **despatxos** és:
+      1. El nombre de taules.
+      2. Si disposa de màquina de cafè.
+- La informació rellevant de les **aules** és: 
+      1. L'aforament màxim.
+      2. Si disposen o no de cadires de pala.
+      3. El nombre d'ordinadors.
+      4. Si disposen o no de connectors de xarxa.
+- La informació rellevant dels **laboratoris** és:
+  1. El nombre d'encenedors Bunsen (per escalfar i esterilitzar mostres)
+- La informació rellevant de les **aules d'informàtica** és:
+  1. El nombre d'impressores.
+- La informació rellevant dels **gimnasos** és:
+    1. Si té dutxes o no.
+    2. El nombre de grades.
