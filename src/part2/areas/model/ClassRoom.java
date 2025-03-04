@@ -1,12 +1,12 @@
 package part2.areas.model;
 
-public class ClassRoom extends Space{
+public abstract class ClassRoom extends Space{
     private int maximumCapacity;
     private boolean hisFoldingChairs;
     private int numberOfComputer;
     private boolean hisNetworkConnector;
 
-    public ClassRoom(int codeId, float surfaceArea, boolean lightType, float electricityConsumptionByKwh, int maximumCapacity, boolean hisFoldingChairs, int numberOfComputer, boolean hisNetworkConnector) {
+    protected ClassRoom(int codeId, float surfaceArea, boolean lightType, float electricityConsumptionByKwh, int maximumCapacity, boolean hisFoldingChairs, int numberOfComputer, boolean hisNetworkConnector) {
         super(codeId, surfaceArea, lightType, electricityConsumptionByKwh);
         this.maximumCapacity = maximumCapacity;
         this.hisFoldingChairs = hisFoldingChairs;
@@ -14,37 +14,39 @@ public class ClassRoom extends Space{
         this.hisNetworkConnector = hisNetworkConnector;
     }
 
-    public int getMaximumCapacity() {
+    protected int getMaximumCapacity() {
         return maximumCapacity;
     }
 
-    public void setMaximumCapacity(int maximumCapacity) {
+    protected void setMaximumCapacity(int maximumCapacity) {
         this.maximumCapacity = maximumCapacity;
     }
 
-    public boolean isHisFoldingChairs() {
+    protected boolean isHisFoldingChairs() {
         return hisFoldingChairs;
     }
 
-    public void setHisFoldingChairs(boolean hisFoldingChairs) {
+    protected void setHisFoldingChairs(boolean hisFoldingChairs) {
         this.hisFoldingChairs = hisFoldingChairs;
     }
 
-    public int getNumberOfComputer() {
+    protected int getNumberOfComputer() {
         return numberOfComputer;
     }
 
-    public void setNumberOfComputer(int numberOfComputer) {
+    protected void setNumberOfComputer(int numberOfComputer) {
         this.numberOfComputer = numberOfComputer;
     }
 
-    public boolean isHisNetworkConnector() {
+    protected boolean isHisNetworkConnector() {
         return hisNetworkConnector;
     }
 
-    public void setHisNetworkConnector(boolean hisNetworkConnector) {
+    protected void setHisNetworkConnector(boolean hisNetworkConnector) {
         this.hisNetworkConnector = hisNetworkConnector;
     }
+
+    public abstract float getSurfaceAreaByStudent();
 
     @Override
     public String toString() {

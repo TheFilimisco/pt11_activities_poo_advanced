@@ -16,6 +16,12 @@ public class Laboratory extends ClassRoom{
         this.quantityBunsenBurners = quantityBunsenBurners;
     }
 
+
+    @Override
+    public float getSurfaceAreaByStudent() {
+        return getSurfaceArea()/getMaximumCapacity();
+    }
+
     @Override
     public String toString() {
         return "Laboratory{" +

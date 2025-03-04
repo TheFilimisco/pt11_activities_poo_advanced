@@ -148,3 +148,30 @@ Volem modelar els espais físics d'un centre escolar.
 - La informació rellevant dels **gimnasos** és:
     1. Si té dutxes o no.
     2. El nombre de grades.
+
+## 4.Water (_[Water](src/part2/water)_)
+
+La facturació de l'aigua en una petita ciutat es basa en tres conceptes: consum,
+sanejament i residuals.
+La informació rellevant relativa de cada factura és:
+   1. L'import per consum
+   2. L'import per sanejament.
+   3. L'import per residuals.
+   4. El descompte aplicat per sanejament.
+   5. El descompte aplicat per residuals.
+A partir de les dades anteriors, volem efectuar les operacions següents:
+      1. Calcular l'import de la factura, tenint en compte que:
+      - a: Els clients normals, paguen la suma dels tres imports, sense cap tipus de
+      descompte.
+      - b: Les famílies nombroses de tipus 1, paguen tot el consum però tenen un
+      descompte del 25 % en el sanejament i la depuració.
+      - c: Les famílies nombroses de tipus 2, paguen tot el consum però tenen un
+      descompte del 75 % en el sanejament i del 50 % en la depuració, amb un màxim
+      en cadascun d'aquests conceptes de 16 €.
+      2. Detallar la factura per pantalla, detallant cadascun dels imports i dels descomptes
+         aplicats i de l'import total. Si es tracta d'una factura de família nombrosa de tipus 2 i
+         s'afegirà la següent nota al final de la factura:
+- NOTA: si l'import màxim de sanejament i residuals és superior a 16, s'ha comptabilitzat
+- Per exemple, per a un import de consum de 10€, un import de sanejament de 20€ i un
+import de residuals de 30€, tindríem les següents factures depenent del tipus de factura:
+      

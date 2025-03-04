@@ -1,6 +1,6 @@
 package part2.areas.model;
 
-abstract class Space {
+public abstract class Space {
     final private int codeId;
     final private float surfaceArea;
     private boolean lightType;
@@ -35,6 +35,10 @@ abstract class Space {
 
     protected void setElectricityConsumptionByKwh(float electricityConsumptionByKwh) {
         this.electricityConsumptionByKwh = electricityConsumptionByKwh;
+    }
+
+    public float getElectricityConsumptionBySurface() {
+        return surfaceArea*electricityConsumptionByKwh;
     }
 
     @Override
