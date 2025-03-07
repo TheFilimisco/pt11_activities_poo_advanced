@@ -55,9 +55,13 @@ public abstract class Invoice {
         this.discountByResidual = discountByResidual;
     }
 
+    protected float getAmountInvoiceWithDiscount() {
+        return getAmountByConsumption()+getAmountBySanitation()+getAmountByResidual();
+    }
+
     protected abstract float getAmountInvoice();
 
-    protected abstract void showInvoice();
+    public abstract void showInvoice();
 
     @Override
     public String toString() {
