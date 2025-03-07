@@ -19,6 +19,6 @@ public class TestSchool {
 
         //Get Space by Student
         ClassRoom classRoom = new GymRoom(4, 2.0f, true,2.3f, 4, true, 1, true, true, 3);
-        classRoom.getSurfaceAreaByStudent();
+        System.out.println( classRoom.getSurfaceAreaByStudent());
     }
 }
