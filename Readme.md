@@ -174,4 +174,13 @@ A partir de les dades anteriors, volem efectuar les operacions següents:
 - NOTA: si l'import màxim de sanejament i residuals és superior a 16, s'ha comptabilitzat
 - Per exemple, per a un import de consum de 10€, un import de sanejament de 20€ i un
 import de residuals de 30€, tindríem les següents factures depenent del tipus de factura:
-      
+
+# 3. Interfaces ([Part3](src/part3))
+
+## 3.Library System (_[Library System](src/part3/library)_)
+
+## 4.Pizzeria (_[Pizzeria](src/part3/pizzeria)_)
+
+## 5. Cos Geomètric (_[Geometric](src/part3/geometric)_)
+
+## 5. Herència múltiple (_[Herency](src/part3/herency)_)
