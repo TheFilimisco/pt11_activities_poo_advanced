@@ -179,8 +179,16 @@ import de residuals de 30€, tindríem les següents factures depenent del tipu
 
 ## 3.Library System (_[Library System](src/part3/library)_)
 
+![Library System](src/img/libraryPart3.png)
+
 ## 4.Pizzeria (_[Pizzeria](src/part3/pizzeria)_)
+
+![Pizzeria](src/img/PizzaStore.png)
 
 ## 5. Cos Geomètric (_[Geometric](src/part3/geometric)_)
 
-## 5. Herència múltiple (_[Herency](src/part3/herency)_)
+![Geometric](src/img/geometricPart3.png)
+
+## 6. Herència múltiple (_[Inheritance](src/part3/Inheritance)_)
+
+![Multiple Inheritance](src/img/herency_diamond.png)

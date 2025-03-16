@@ -1,6 +1,6 @@
 package part3.library.model;
 
-public class LibraryWork {
+public abstract class LibraryWork {
     private int id;
     private String title;
     private int releaseYear;
