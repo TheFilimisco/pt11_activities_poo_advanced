@@ -175,7 +175,9 @@ A partir de les dades anteriors, volem efectuar les operacions següents:
 - Per exemple, per a un import de consum de 10€, un import de sanejament de 20€ i un
 import de residuals de 30€, tindríem les següents factures depenent del tipus de factura:
 
-# 3. Interfaces ([Part3](src/part3))
+# 3. Interfaces ([Part3](https://docs.google.com/document/d/1v3hZeT1xmpDYN5UhHmJp2ZEhBpzNFaX54sbJe84D8ss/edit?usp=sharing))
+
+## 1 & 2 Answer(_[Answers]()_)
 
 ## 3.Library System (_[Library System](src/part3/library)_)
 
